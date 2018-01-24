@@ -1,0 +1,84 @@
+// ********
+// Dice.java
+
+import java.util.Scanner;
+
+
+public class Dice
+{
+	public static void main(String[] args)
+	{
+		Scanner scan = new Scanner(System.in);
+		String list= " 1- Four sided dice \n 2- Six sided dice \n 3- Eight sided dice \n 4- Twelve sided dice \n 5- Twenty sided dice \n 6- Quit \n Enter your choice";
+		System.out.println(list);
+		int n = scan.nextInt();
+
+		while (n != 6) {
+			switch (n) {
+			// 4 side dice
+				case 1: int die1;
+					die1 = (int)(Math.random() *4 + 1);
+					System.out.println("You rolled: " + die1);
+					System.out.println();
+					System.out.println(list);
+					n = scan.nextInt();
+					break;
+					
+			// 6 side dice
+				case 2: int die2;
+					die2 = (int)(Math.random() *6 + 1);
+					System.out.println("You rolled: " + die2);
+					System.out.println();
+					System.out.println(list);
+					n = scan.nextInt();
+					break;
+			
+			// 8 side dice
+				case 3: int die3;
+					die3 = (int)(Math.random() *8 + 1);
+					System.out.println("You rolled: " + die3);
+					System.out.println();
+					System.out.println(list);
+					n = scan.nextInt();
+					break;
+					
+			// 12 side dice
+				case 4: int die4;
+					die4 = (int)(Math.random() *12 + 1);
+					System.out.println("You rolled: " + die4);
+					System.out.println();
+					System.out.println(list);
+					n = scan.nextInt();
+					break;
+					
+			// 20 side dice
+				case 5: int die5;
+					die5 = (int)(Math.random() *20 + 1);
+					System.out.println("You rolled: " + die5);
+					System.out.println();
+					System.out.println(list);
+					n = scan.nextInt();
+					break;
+
+			// default
+				default:
+				System.out.println(" No dice. Roll again.");
+				System.out.println();
+				System.out.println(list);
+				n = scan.nextInt();
+				break;
+
+			}
+		}
+					
+		
+	}
+}
+
+
+
+
+
+		
+
+
